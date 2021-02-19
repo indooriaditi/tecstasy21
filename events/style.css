@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'bebas';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 360px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 1080vh;
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 1080vh;
+    }
+}
+
+@media (min-width: 640px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 410vh;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 410vh;
+    }
+}
+
+@media (min-width:1100px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 410vh;
+    }
+}
+
+#particles-js {
+    height: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.back img {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 30px;
+    height: 40px;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 50px;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: 'bebas';
+    letter-spacing: 5px;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #000, 0 0 20px #fff, 0 0 30px #dc143c;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #d83757, 0 0 40px #d83757;
+    }
+}
+
+.row {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    flex: 25%;
+    margin: 20px auto;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        margin: 0px, auto;
+    }
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container .box::before {
+    content: 'TECSTASY';
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box::after {
+    content: '21';
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity: 0.04;
+}
+
+.container .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    font-size: 2em;
+}
+
+.container .box:hover .name {
+    top: 20px;
+    opacity: 1;
+}
+
+.container .box .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 50px);
+}
+
+.container .box .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px);
+}
+
+.container .box:hover .product {
+    transform: translate3d(-50%, -50%, 100px);
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy {
+    background: #dc143c;
+}
