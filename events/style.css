@@ -12,6 +12,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media (min-height: 568px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 1220vh;
+    }
+}
+
 @media (min-width: 360px) {
     body {
         margin: 0;
@@ -52,17 +60,77 @@
     }
 }
 
+@media (min-height: 667px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 1040vh;
+    }
+}
+
+@media (min-height: 736px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 943vh;
+    }
+}
+
+@media (min-height: 800px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 870vh;
+    }
+}
+
+@media (min-height: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 680vh;
+    }
+}
+
+@media (min-height:1080px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 245vh;
+    }
+}
+
+@media (min-height:1300px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 193vh;
+    }
+}
+
 #particles-js {
     height: 100%;
     background: rgb(0, 0, 0);
 }
 
-.back img {
-    position: absolute;
-    top: 90px;
-    left: 30px;
-    width: 30px;
-    height: 40px;
+@media screen and (max-width: 320px) {
+    .back img {
+        position: absolute;
+        top: 80px;
+        left: 5px;
+        width: 30px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    .back img {
+        position: absolute;
+        top: 80px;
+        left: 30px;
+        width: 30px;
+        height: 40px;
+    }
 }
 
 .title {

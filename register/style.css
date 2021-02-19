@@ -21,6 +21,21 @@
     border: #ccc 2px solid;
 }
 
+@media (max-width: 414px) {
+    #card {
+        position: absolute;
+        top: 40px;
+        margin: 0px;
+        background: rgb(0, 0, 0);
+        opacity: 0.7;
+        padding: 2em;
+        border: #ccc 2px solid;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
 .back img {
     position: absolute;
     top: 40px;
