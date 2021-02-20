@@ -84,6 +84,14 @@
     }
 }
 
+@media (min-height: 812px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 790vh;
+    }
+}
+
 @media (min-height: 869px) {
     body {
         margin: 0;
