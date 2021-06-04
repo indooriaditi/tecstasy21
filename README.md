@@ -1,0 +1,1 @@
+A website developed in Javascript and CSS, to represent IT department's symposium - Tecstasy, at CBIT's Annual Technical Fest Sudhee. The website provides details of the various events hosted by the Department of IT. 
